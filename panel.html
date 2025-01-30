@@ -12,11 +12,30 @@
       width: 100%;
       height: 100%;
       border: none;
+      position: absolute;
+      z-index: 1;
+    }
+    button {
+      color: rgb(38, 38, 38);
+      position: absolute;
+      display: none;
+      top: 2px;
+      left: 2px;
+      background: #d4d4d4;
+      border: 1px solid #737373;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 2;
+
+      &:hover {
+        background-color: #fff;
+      }
     }
   </style>
 </head>
 <body>
-  <iframe id="tinkerFrame"></iframe>
+  <button id="reload">&#8634;</button>
+  <iframe title="Symfony debug frame" id="symfonyFrame"></iframe>
   <script src="panel.js"></script>
 </body>
 </html>
