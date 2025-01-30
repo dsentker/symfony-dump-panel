@@ -27,6 +27,11 @@ chrome.tabs.query({active: true}, function (tabs) {
       </body>
     </html>`;
 
+    document.getElementById('reload').addEventListener('click', function() {
+        // noinspection SillyAssignmentJS
+        document.getElementById('symfonyFrame').src = document.getElementById('symfonyFrame').src;
+    });
+
     fetch(symfonyProfilerDumpUrl, {method: 'HEAD'})
         .then(response => {
             const iframe = document.getElementById('symfonyFrame');

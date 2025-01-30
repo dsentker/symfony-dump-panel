@@ -1,12 +1,17 @@
 {
   "name": "Symfony dump",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "manifest_version": 3,
   "description": "A DevTools extension to show Symfony profile dumps.",
   "devtools_page": "devtools.html",
-  "permissions": ["tabs"],
-  "host_permissions": ["*"],
+  "permissions": ["tabs", "sidePanel"],
   "icons": {
-    "128": "image.png"
+    "128": "logo.png"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
   }
 }
