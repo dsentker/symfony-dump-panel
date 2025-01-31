@@ -3,6 +3,7 @@
 <head>
   <style>
     body, html {
+      background-color: rgb(38, 38, 38);
       margin: 0;
       padding: 0;
       width: 100%;
@@ -14,22 +15,31 @@
       border: none;
       position: absolute;
       z-index: 1;
+      max-width: 768px /* max value for minified profiler sidebar */;
     }
     button {
       color: rgb(38, 38, 38);
       position: absolute;
       display: none;
-      top: 2px;
-      left: 2px;
-      background: #d4d4d4;
+      top: 5px;
+      left: 7px;
+      background: #d4d4d4aa;
       border: 1px solid #737373;
-      font-size: 14px;
+      font-size: 40px;
       font-weight: bold;
       z-index: 2;
+      border-radius: 5px;
+      cursor: pointer;
 
       &:hover {
         background-color: #fff;
       }
+    }
+
+    h2 {
+      padding: 50px;
+      text-align: center;
+      line-height: 230%;
     }
   </style>
 </head>

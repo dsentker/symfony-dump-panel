@@ -1,12 +1,17 @@
 {
-  "name": "Symfony dump",
-  "version": "0.1.2",
+  "name": "Symfony Profiler Sidebar",
+  "short_name": "Symfony",
+  "version": "0.1.5",
   "manifest_version": 3,
   "description": "A DevTools extension to show Symfony profile dumps.",
   "devtools_page": "devtools.html",
-  "permissions": ["tabs", "sidePanel"],
+  "permissions": ["tabs", "activeTab", "sidePanel"],
+  "host_permissions": ["<all_urls>"],
   "icons": {
     "128": "logo.png"
+  },
+  "action": {
+    "default_title": "Open Sidebar with Symfony Profiler"
   },
   "side_panel": {
     "default_path": "panel.html"
